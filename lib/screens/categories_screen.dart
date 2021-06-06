@@ -5,6 +5,8 @@ import '../widgets/category_item.dart';
 class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({key}) : super(key: key);
 
+  static const routeName = '/category-meals';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
