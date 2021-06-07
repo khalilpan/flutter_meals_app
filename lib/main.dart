@@ -18,6 +18,8 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String titleApp = 'Meals App';
+  List<Meal> _filteredMeals = DUMMY_MEALS;
+  List<Meal> _favoriteMeals = [];
 
   Map<String, bool> _filters = {
     'gluten': false,
@@ -49,7 +51,25 @@ class _MyAppState extends State<MyApp> {
     });
   }
 
-  List<Meal> _filteredMeals = DUMMY_MEALS;
+  void _toggleFavorite(String mealId) {
+    final existingIndex =
+        _favoriteMeals.indexWhere((item) => item.id == mealId);
+    if (existingIndex >= 0) {
+      setState(() {
+        _favoriteMeals.removeAt(existingIndex);
+      });
+    } else {
+      setState(() {
+        _favoriteMeals.add(
+          DUMMY_MEALS.firstWhere((item) => item.id == mealId),
+        );
+      });
+    }
+  }
+
+  bool _isMealfavorite(String id) {
+    return _favoriteMeals.any((item) => item.id == id);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -76,12 +96,13 @@ class _MyAppState extends State<MyApp> {
       ),
       // home: CategoriesScreen(),
       routes: {
-        '/': (cts) => TabsScreen(),
+        '/': (cts) => TabsScreen(favoriteMeals: _favoriteMeals),
         CategoriesScreen.routeName: (ctx) =>
             CategoryMealsScreen(filteredmealstoShow: _filteredMeals),
-        MealDetailScreen.routeName: (ctx) => MealDetailScreen(),
+        MealDetailScreen.routeName: (ctx) => MealDetailScreen(
+            toggleFavorite: _toggleFavorite, isMealfavorite: _isMealfavorite),
         FiltersScreen.routename: (cts) =>
-            FiltersScreen(saveFilters: _setFilters,currentFilters: _filters),
+            FiltersScreen(saveFilters: _setFilters, currentFilters: _filters),
       },
       onGenerateRoute: (settings) {
         print('=========' + settings.arguments);
