@@ -2,6 +2,25 @@
 
 A new Flutter project.
 
+**Categories Screen** :
+![Categories](https://user-images.githubusercontent.com/40691961/121061931-deb18900-c79a-11eb-96df-6e5e12e407ab.png)
+
+**Category Meal Screen**:
+![CategoryMealScreen](https://user-images.githubusercontent.com/40691961/121062011-f5f07680-c79a-11eb-8774-6871b33f53b9.png)
+
+**Drawer Menu**:
+![Drawer Menu](https://user-images.githubusercontent.com/40691961/121062099-13bddb80-c79b-11eb-9f82-75801d8fd0a6.png)
+
+**Favorites**:
+![Favorites](https://user-images.githubusercontent.com/40691961/121062127-1a4c5300-c79b-11eb-8105-5bec54aa6d9e.png)
+
+**Filters**:
+![Filters](https://user-images.githubusercontent.com/40691961/121062160-220bf780-c79b-11eb-937c-c797fd36ad81.png)
+
+**Meal Screen**:
+![MealScreen](https://user-images.githubusercontent.com/40691961/121062194-2a643280-c79b-11eb-9fcf-b821d8e4d1fe.png)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
