@@ -68,12 +68,12 @@ flutter:
           weight: 900
     - family: RobotoCondensed
       fonts:
-        - asset: assets/fonts/RobotoContences-Regular.ttf
-        - asset: assets/fonts/RobotoContences-Bold.ttf
+        - asset: assets/fonts/RobotoCondensed-Regular.ttf
+        - asset: assets/fonts/RobotoCondensed-Bold.ttf
           weight: 700
-        - asset: assets/fonts/RobotoContences-light.ttf
+        - asset: assets/fonts/RobotoCondensed-light.ttf
           weight: 300
-        - asset: assets/fonts/RobotoContences-Italic.ttf
+        - asset: assets/fonts/RobotoCondensed-Italic.ttf
           style: italic
   #   - family: Trajan Pro
   #     fonts:
