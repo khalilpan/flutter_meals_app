@@ -1,6 +1,73 @@
 # meals_app
 
-A new Flutter project.
+Passing data between different screens using constructors and using series of widgets and some fFlutter concepts(just for learn) in this app:
+
+SwitchListTile()
+Divider()
+ClipRRect()
+InkWell ()
+GridView()
+LayoutBuilder()
+Container()
+GestureDetector()
+showDatePicker()
+CircleAvatar()
+ListTile()
+Expanded()
+FractionallySizedBox()
+FittedBox()
+Flexible()
+Stack()
+SizedBox()
+SingleChildScrollView()
+FlatButton()
+TextField()
+Text()
+center()
+
+
+Navigator.of(context).popAndPushNamed()
+Navigator.of(context).pop()
+Navigator.of(context).pushReplacementNamed('/')
+
+
+Drawer()
+BottomNavigationBar()
+BottomNavigationBarItem()
+onUnknownRoute()
+onGenerateRoute()
+routes()
+
+App lifeCycless :
+initState()
+didChangeDependencies()
+didChangeAppLifecycleState()
+dispose()
+
+Widget lifeCycles :
+didUpdateWidget()
+dispose()
+initState()
+
+
+Platform.isIOS
+MediaQuery.of(context).viewInsets
+MediaQuery.of(context).viewInsets.bottom
+MediaQuery.of(context).orientation
+appBar.preferredSize.height
+MediaQuery.of(context).size.height
+
+ListView()
+ListView.builder()
+
+Enabling portrait mode:
+WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]);
+  
+  
 
 **Categories Screen** :
 ![Categories](https://user-images.githubusercontent.com/40691961/121061931-deb18900-c79a-11eb-96df-6e5e12e407ab.png)
